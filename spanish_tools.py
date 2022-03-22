@@ -1,6 +1,7 @@
 # coding: utf-8
 
 # define dictionaries containing verb endings
+# to-do: have this read from .json's
 class Endings:
     def __init__(self): 
         self.present_indicative = {"name": "present_indicative",
@@ -19,6 +20,7 @@ class Endings:
 endings = Endings()
 #print(endings.present_indicative)
 
+# To-do: make this read from a .txt
 list_of_irreg_verbs = ["ser",
                         "haber",
                         "estar",
