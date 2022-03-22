@@ -50,9 +50,7 @@ async def on_ready():
 
 
 # Load data files
-excuses = open("./special_files/excuses.json")
-excuses = json.load(excuses)
-
+# to-do: have these only load when needed for a respective command
 encouragements = open("./special_files/encouragements.json")
 encouragements = json.load(encouragements)
 
