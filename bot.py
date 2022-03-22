@@ -96,7 +96,7 @@ async def on_message(message):
     # it is severely outdated; this will need to be
     # updated for the 1.0 release
     if message_content == [prefix, "help"]:
-      await message.channel.send("<Commands list>")
+      await message.channel.send("1. !turing help - returns a list of commands + \n + 2. !turing meme - returns a random meme + \n + 3. !turing bless <user> - tag another user to bless them! + \n + 4. !turing curse <user> - tag another user to curse them! + \n + 5. !turing inspire - use a Markov chain to randomly generate an inspirational quote" + "\n" + "6. !turnig conjugate <Spanish verb> - conjugate a Spanish verb; currently has limited support and does not handle irrgular verbs but improvements are on the way" + "\n" + "7. !turing stock <stock ticker code> - return a candlestick chart of a stock" + "\n" + "8. !turing encourage - returning an encouraging message (likely to become deprecated)")
       
     # Create a list of meme files, and remove the
     # .directory file - this caused some interesting
