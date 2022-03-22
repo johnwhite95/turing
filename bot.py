@@ -127,7 +127,7 @@ async def on_message(message):
           str(command_typer) + " " +  "cursed " + message_content[2] + " with " + 
           spells["curse"][spell_choice][0] + "!")
 
-        if message_content[0:2] == [prefix, "inspire"]:
+    if message_content[0:2] == [prefix, "inspire"]:
 
       quote = markovify.Text(inspirational_quotes, state_size = 2).make_sentence()
 
