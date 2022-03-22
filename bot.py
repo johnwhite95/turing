@@ -3,15 +3,10 @@
 import os # os functions for file management
 import random # for generating random numbers
 import datetime # for dealing with date and time
-import numpy as np # numerical methods
-import pandas as pd # dataframe functions
 
 import yfinance as yf # library for pulling stock data
 
 import plotly.graph_objects as go # import plotly library for candlestick chart
-
-from time import sleep # may be needed for periodically refreshing time
-import dataframe_image as dfi
 
 import markovify # for text generation
 
@@ -38,7 +33,7 @@ GUILD = os.getenv("DISCORD_GUILD")
 
 # define basic server properties
 client = discord.Client()
-prefix = "!tanya"
+prefix = "!turing"
 
 
 # For backend use - indicates successful connection to a Discord server
