@@ -90,7 +90,7 @@ async def on_message(message):
     # If a user simply types !tanya, provide a list of commands to 
     # help them out
     if message.content == prefix:
-      await message.channel.send("Type `!tanya help` for a list of commands")
+      await message.channel.send("Type `!turing help` for a list of commands")
 
     # This is the help menu for a list of commands
     # it is severely outdated; this will need to be
