@@ -158,8 +158,9 @@ async def on_message(message):
       # Delete temporary file from server
       os.remove("./temp_files/inspire.png")
 
+    # Conjugate Spanish verbs
     if message_content[0:2] == [prefix, "conjugate"]:
-      await message.channel.send(portuguese_tools.conjugate(message_content[2]))
+      await message.channel.send(spanish_tools.conjugate(message_content[2]))
 
 
     # Load stocks with Yahoo finance library and display
