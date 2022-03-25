@@ -79,13 +79,10 @@ async def on_message(message):
     message_content = message.content.split()
     message_content = [x.lower() for x in message_content]
 
-    # don't recall what this does - will need to check
-    # but it isn't a case of me forgetting to put
-    # something after "return"
     if message.author == client.user:
         return
 
-    # If a user simply types !tanya, provide a list of commands to 
+    # If a user simply types !turing, provide a list of commands to 
     # help them out
     if message.content == prefix:
       await message.channel.send("Type `!turing help` for a list of commands")
@@ -165,7 +162,7 @@ async def on_message(message):
       await message.channel.send(portuguese_tools.conjugate(message_content[2]))
 
 
-    # Stocks only go up - display proof of this fact!
+    # Load stocks with Yahoo finance library and display
     if message_content[0:2] == [prefix, "stock"]:
       symbol = message_content[2]
       stock_df = yf.download(tickers=symbol, period="5d", interval="30m")
